@@ -17,7 +17,7 @@ vcs_status() {
     elif [[ $(whence in_hg) != "" ]] && in_hg; then
         hg_prompt_info
     else
-        git_prompt_info
+        _omz_git_prompt_info
     fi
 }
 
